@@ -31,9 +31,8 @@ int main(int argc, char** argv) {
         strcat(commitMsg, curMsg);
         strcat(commitMsg, "\"");
         argv[3] = commitMsg;
-    }   
-    printf("a\n");
-    argv[0] = "gittemp";
+    } 
+    argv[0] = "git_no_emoji";
     char* concatCmd = concatArgs(argc, argv);
     system(concatCmd);
 }
