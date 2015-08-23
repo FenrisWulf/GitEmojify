@@ -22,7 +22,7 @@ char* concatArgs(int argc, char** args) {
     return result;
 }
 int main(int argc, char** argv) {
-    if (strcmp(argv[1], "commit") == 0 && argc >= 4) {
+    if (argc > 1 && strcmp(argv[1], "commit") == 0 && argc >= 4) {
         char* commitMsg = malloc(MAXLEN * sizeof(char*));
         char* curMsg = argv[3];
         char* randomEmoji = getRandomEmoji();
@@ -32,6 +32,7 @@ int main(int argc, char** argv) {
         strcat(commitMsg, "\"");
         argv[3] = commitMsg;
     }   
+    printf("a\n");
     argv[0] = "gittemp";
     char* concatCmd = concatArgs(argc, argv);
     system(concatCmd);
