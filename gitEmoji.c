@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
         strcat(commitMsg, "\"");
         strcat(commitMsg, randomEmoji);
         strcat(commitMsg, curMsg);
-        strcat(commitMsg, "\"");
+        strcat(commitMsg, "\""); 
         argv[3] = commitMsg;
     } 
     argv[0] = "git_no_emoji";
