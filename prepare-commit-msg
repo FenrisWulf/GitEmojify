@@ -4,6 +4,6 @@
 #
 
 cat "$1" > "$1.noemoji"
-./random_emoji > "$1"
+node index.js 'something here bacon' > "$1"
 cat "$1.noemoji" >> "$1"
 

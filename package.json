@@ -1,0 +1,30 @@
+{
+  "name": "GitEmojify",
+  "version": "1.0.0",
+  "description": "Do you want to have a bunch of pretty emojis in your git commits, but not have to bother with finding different emoticon codes? This does it for you! This script chooses a random git emoji to add to any of your commit messages, letting you have beautiful Christmas Tree looking commit logs!",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.13.1",
+    "babel": "^6.5.2",
+    "emojione": "^2.2.6",
+    "es6-promise": "^3.2.1",
+    "got": "^6.3.0",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.1.0",
+    "simple-ajax": "^2.6.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FenrisWulf/GitEmojify"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FenrisWulf/GitEmojify/issues"
+  },
+  "homepage": "https://github.com/FenrisWulf/GitEmojify"
+}
